@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const props = defineProps<{
-    type?: string
+    type?: 'button' | 'submit' | 'reset'
     href?: string
 }>()
 </script>
