@@ -7,6 +7,8 @@ import Home from '@/components/Home.vue'
 import Nav from '@/components/Nav.vue'
 import PhotoShowcase from '@/components/PhotoShowcase.vue'
 import Section from '@/components/Section.vue'
+
+const year = new Date().getFullYear()
 </script>
 
 <template>
@@ -56,9 +58,7 @@ import Section from '@/components/Section.vue'
         <hr class="border border-primary-lighter mx-10" />
 
         <div class="container mx-auto px-4 text-center">
-            <span class="text-sm font-playfair"
-                >@ 2025 Linneth. All rights reserved.</span
-            >
+            <span class="text-sm font-playfair">@ {{ year }} Linneth. All rights reserved.</span>
         </div>
     </footer>
 </template>
