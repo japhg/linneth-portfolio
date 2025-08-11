@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Personal Survival Technique",
+        "description": "Gained essential skills for surviving emergency situations, including hazard assessment, safe evacuation, effective use of survival equipment, and strategies to protect life until rescue.",
+        "img": "/images/personal-technique.jpg"
+    },
+    {
+        "title": "Fire Prevention and Fire Fighting",
+        "description": "Trained in identifying fire hazards, implementing preventive measures, and executing effective firefighting techniques to ensure safety and minimize risks in emergency situations.",
+        "img": "/images/fire-prevention.jpg"
+    },
+    {
+        "title": "Elementary First Aid",
+        "description": "Trained in providing immediate and basic medical assistance during emergencies, including injury assessment, wound care, CPR, and stabilizing patients until professional help arrives.",
+        "img": "/images/elementary-first-aid.png"
+    },
+    {
+        "title": "Personal Safety and Social Responsibilities Responsibilitie Responsibilitie",
+        "description": "Trained to developed awareness of safe working practices, risk prevention, teamwork, and effective communication to maintain safety, harmony, and responsibility in diverse and challenging environments.",
+        "img": "/images/solas1.jpg"
+    }
+]

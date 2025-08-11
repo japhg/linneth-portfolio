@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+/* @import './base.css'; */
+@import 'tailwindcss';
+
+@theme {
+    --font-lora: 'Lora', serif;
+    --font-playfair: 'Playfair Display', serif;
+    --color-primary-lightest: #fbf4f5;
+    --color-primary-lighter: #f7eaeb;
+    --color-primary-light: #e3b8bb;
+    --color-primary: #d89a9e;
+    --color-primary-dark: #ac7b7e;
+    --color-primary-darker: #563d3f;
+    --color-primary-darkest: #402e2f;
+}
+
+.text-heading {
+    @apply text-3xl md:text-[55px] font-medium leading-10 md:leading-[70px] font-playfair;
+}
+
+.text-subHeading {
+    @apply text-2xl md:text-[35px] font-playfair;
+}
+
+.text-content {
+    @apply text-base md:text-lg;
+}
