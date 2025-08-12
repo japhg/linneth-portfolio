@@ -3,6 +3,7 @@ import { RouterLink } from 'vue-router'
 import FacebookIcon from './icons/FacebookIcon.vue'
 import InstagramIcon from './icons/InstagramIcon.vue'
 import TiktokIcon from './icons/TiktokIcon.vue'
+import LinkedinIcon from './icons/LinkedinIcon.vue'
 
 const exploreLinks = [
     { title: 'Home', url: '#home' },
@@ -48,13 +49,22 @@ const exploreLinks = [
 
                 <div class="flex justify-center md:justify-start items-center gap-5">
                     <a href="https://www.facebook.com/linneth.gomera.5">
-                        <FacebookIcon class="w-8 h-8 hover:text-primary" />
+                        <FacebookIcon
+                            class="w-8 h-8 hover:fill-primary transition-all ease-in-out"
+                        />
                     </a>
                     <a href="https://www.instagram.com/Linneth%20gomera">
-                        <InstagramIcon class="w-8 h-8" />
+                        <InstagramIcon
+                            class="w-8 h-8 hover:fill-primary transition-all ease-in-out"
+                        />
                     </a>
                     <a href="https://www.tiktok.com/@msluna555">
-                        <TiktokIcon class="w-8 h-8" />
+                        <TiktokIcon class="w-8 h-8 hover:fill-primary transition-all ease-in-out" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/linneth-gomera-85731a372/">
+                        <LinkedinIcon
+                            class="w-8 h-8 hover:fill-primary transition-all ease-in-out"
+                        />
                     </a>
                 </div>
             </div>

@@ -41,7 +41,7 @@ const closeMenu = () => {
             <!-- Nav Links -->
             <div class="gap-6 hidden md:flex">
                 <div v-for="(link, key) in links" :key="key">
-                    <a :href="link.url" class="font-hover:text-accent transition-colors text-lg">
+                    <a :href="link.url" class="font-hover:text-accent hover:text-primary transition-colors ease-in-out text-lg">
                         {{ link.name }}
                     </a>
                 </div>
