@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import Nav from './components/Nav.vue'
+import { RouterView } from 'vue-router'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 </script>
 
 <template>
-  <div class="font-lora">
-    <RouterView />
-  </div>
+    <div class="font-lora">
+        <RouterView />
+    </div>
 </template>

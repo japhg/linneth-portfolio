@@ -8,7 +8,7 @@ import PrimaryButton from './PrimaryButton.vue'
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-16 items-center">
             <div class="flex flex-col gap-4">
                 <h2 class="text-subHeading">Let’s Create Together</h2>
-                <p class="text-content text-justify font-normal leading-8 italic">
+                <p class="text-content font-normal leading-8 italic">
                     "Every journey starts somewhere. Let’s begin ours by creating beauty, capturing
                     moments, and telling stories together."
                 </p>

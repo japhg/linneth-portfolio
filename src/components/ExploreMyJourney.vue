@@ -16,13 +16,14 @@ import trainings from '@/data/trainings.json'
 
         <!-- Photo Grid -->
         <div class="w-full">
-            <div
-                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
-            >
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                 <div
                     v-for="(training, index) in trainings"
                     :key="index"
                     class="flex flex-col gap-4 items-center text-center group"
+                    data-aos="fade-up"
+                    :data-aos-delay="200 * index"
+                    data-aos-duration="600"
                 >
                     <div
                         class="rounded-xl overflow-hidden w-full aspect-[4/5] shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-[1.02]"

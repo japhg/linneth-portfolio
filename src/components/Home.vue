@@ -8,17 +8,30 @@ import PrimaryButton from './PrimaryButton.vue'
             <div class="flex flex-col gap-5">
                 <h1
                     class="text-center md:text-start text-heading"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                    data-aos-duration="600"
                 >
                     Welcome to Linneth Gomera's Creative Portfolio
                 </h1>
 
-                <p class="text-content text-center md:text-start font-normal">
+                <p
+                    class="text-content text-center md:text-start font-normal"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-duration="600"
+                >
                     Explore the vibrant world of Linneth Gomera, a passionate Tourism Graduate and
                     aspiring Model. Discover her journey, creativity, and the projects that showcase
                     her unique talents.
                 </p>
 
-                <div class="flex justify-center md:justify-start">
+                <div
+                    class="flex justify-center md:justify-start"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                    data-aos-duration="600"
+                >
                     <PrimaryButton
                         href="#my-journey"
                         class="bg-primary text-white py-2 md:py-4 px-4 md:px-6 text-content"
