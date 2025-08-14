@@ -14,59 +14,77 @@ const exploreLinks = [
 </script>
 
 <template>
-    <div class="grid grid-cols-1 md:grid-cols-3 text-center md:text-start gap-5 py-16">
-        <div class="col-span-1 flex justify-center md:justify-start">
-            <RouterLink to="/">
-                <img src="/images/linneth-logo.svg" alt="Linneth Logo" class="h-auto" />
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-12">
+        <!-- Brand -->
+        <div class="lg:col-span-1">
+            <RouterLink to="/" class="inline-block">
+                <img src="/images/linneth-logo.svg" alt="Linneth Logo" class="h-10 w-auto mb-6" />
             </RouterLink>
+            <p class="text-gray-600 text-sm leading-relaxed">
+                Tourism Graduate & Aspiring Model. Creating beauty, capturing moments, and telling
+                stories through professional modeling and creative collaboration.
+            </p>
         </div>
 
-        <div class="col-span-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-0">
-            <div class="flex flex-col gap-2 font-playfair">
-                <h6 class="text-content font-medium">Explore</h6>
-
+        <!-- Navigation -->
+        <div class="lg:col-span-1">
+            <h6 class="text-gray-900 font-medium text-sm uppercase tracking-wide mb-6">
+                Navigation
+            </h6>
+            <div class="space-y-3">
                 <a
                     v-for="(explore, exploreIndex) in exploreLinks"
                     :key="exploreIndex"
                     :href="explore.url"
-                    class="text-sm hover:underline hover:text-primary transition-all ease-in-out"
+                    class="block text-gray-600 hover:text-gray-900 transition-colors duration-200 text-sm"
                 >
                     {{ explore.title }}
                 </a>
             </div>
-            <div class="flex flex-col gap-2">
-                <h6 class="text-content font-medium font-playfair">Get In Touch</h6>
+        </div>
 
+        <!-- Contact -->
+        <div class="lg:col-span-1">
+            <h6 class="text-gray-900 font-medium text-sm uppercase tracking-wide mb-6">Contact</h6>
+            <div class="space-y-3">
                 <a
-                    href="mailto:linnethgomera05@gmail.com?subject=Inquire"
-                    class="text-sm hover:underline hover:text-primary transition-all ease-in-out"
+                    href="mailto:linnethgomera05@gmail.com?subject=Inquiry - Portfolio"
+                    class="block text-gray-600 hover:text-gray-900 transition-colors duration-200 text-sm"
                 >
                     linnethgomera05@gmail.com
                 </a>
+                <p class="text-gray-600 text-sm">Available for travel worldwide</p>
             </div>
-            <div class="flex flex-col gap-2">
-                <h6 class="text-content font-medium">Follow me:</h6>
+        </div>
 
-                <div class="flex justify-center md:justify-start items-center gap-5">
-                    <a href="https://www.facebook.com/linneth.gomera.5">
-                        <FacebookIcon
-                            class="w-8 h-8 hover:fill-primary transition-all ease-in-out"
-                        />
-                    </a>
-                    <a href="https://www.instagram.com/Linneth%20gomera">
-                        <InstagramIcon
-                            class="w-8 h-8 hover:fill-primary transition-all ease-in-out"
-                        />
-                    </a>
-                    <a href="https://www.tiktok.com/@msluna555">
-                        <TiktokIcon class="w-8 h-8 hover:fill-primary transition-all ease-in-out" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/linneth-gomera-85731a372/">
-                        <LinkedinIcon
-                            class="w-8 h-8 hover:fill-primary transition-all ease-in-out"
-                        />
-                    </a>
-                </div>
+        <!-- Social -->
+        <div class="lg:col-span-1">
+            <h6 class="text-gray-900 font-medium text-sm uppercase tracking-wide mb-6">Follow</h6>
+            <div class="flex space-x-4">
+                <a
+                    href="https://www.facebook.com/linneth.gomera.5"
+                    class="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors duration-200"
+                >
+                    <FacebookIcon class="w-5 h-5 text-gray-600" />
+                </a>
+                <a
+                    href="https://www.instagram.com/raya_urassaya"
+                    class="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors duration-200"
+                >
+                    <InstagramIcon class="w-5 h-5 text-gray-600" />
+                </a>
+                <a
+                    href="https://www.tiktok.com/@msluna555"
+                    class="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors duration-200"
+                >
+                    <TiktokIcon class="w-5 h-5 text-gray-600" />
+                </a>
+                <a
+                    href="https://www.linkedin.com/in/linneth-gomera-85731a372/"
+                    class="w-10 h-10 bg-gray-100 hover:bg-gray-200 rounded-full flex items-center justify-center transition-colors duration-200"
+                >
+                    <LinkedinIcon class="w-5 h-5 text-gray-600" />
+                </a>
             </div>
         </div>
     </div>

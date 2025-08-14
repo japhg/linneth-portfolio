@@ -6,59 +6,85 @@ import Footer from '@/components/Footer.vue'
 import Home from '@/components/Home.vue'
 import Nav from '@/components/Nav.vue'
 import PhotoShowcase from '@/components/PhotoShowcase.vue'
-import Section from '@/components/Section.vue'
 
 const year = new Date().getFullYear()
 </script>
 
 <template>
-    <main class="w-full min-h-screen flex flex-col">
-        <Nav />
+    <main class="w-full min-h-screen bg-white">
+        <!-- Fixed Navigation -->
+        <div
+            class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100"
+        >
+            <Nav />
+        </div>
 
-        <div class="flex-1 flex flex-col items-center">
-            <div class="container mx-auto px-4" id="home">
-                <Section class="h-fit lg:h-screen">
+        <!-- Main Content -->
+        <div class="pt-20">
+            <!-- Hero Section -->
+            <section
+                class="relative min-h-screen flex items-center justify-center overflow-hidden"
+                id="home"
+            >
+                <div class="absolute inset-0 bg-gradient-to-br from-gray-50 to-white"></div>
+                <div class="relative container mx-auto px-6 lg:px-8">
                     <Home />
-                </Section>
-            </div>
+                </div>
+            </section>
 
-            <div class="w-full bg-primary-lighter" id="about">
-                <Section>
+            <!-- About Section -->
+            <section
+                class="relative py-24 lg:py-32 bg-gradient-to-b from-white to-gray-50"
+                id="about"
+            >
+                <div class="container mx-auto px-6 lg:px-8">
                     <About />
-                </Section>
-            </div>
+                </div>
+            </section>
 
-            <div class="container mx-auto px-4" id="my-journey">
-                <Section class="">
+            <!-- Journey Section -->
+            <section class="relative py-24 lg:py-32 bg-white" id="my-journey">
+                <div class="container mx-auto px-6 lg:px-8">
                     <ExploreMyJourney />
-                </Section>
-            </div>
+                </div>
+            </section>
 
-            <div class="w-full bg-primary-lighter py-20" id="portfolio">
-                <div class="container mx-auto px-4">
+            <!-- Portfolio Section -->
+            <section
+                class="relative py-24 lg:py-32 bg-gradient-to-b from-gray-50 to-white"
+                id="portfolio"
+            >
+                <div class="container mx-auto px-6 lg:px-8">
                     <PhotoShowcase />
                 </div>
-            </div>
+            </section>
 
-            <div class="w-full" id="contact">
-                <Section>
+            <!-- Contact Section -->
+            <section class="relative py-24 lg:py-32 bg-white" id="contact">
+                <div class="container mx-auto px-6 lg:px-8">
                     <Contact />
-                </Section>
-            </div>
+                </div>
+            </section>
         </div>
     </main>
 
-    <hr class="border border-primary-lighter mx-10" />
-
-    <footer class="w-full">
-        <div class="container mx-auto px-4">
+    <!-- Footer -->
+    <footer class="relative bg-white text-gray-900">
+        <div class="container mx-auto px-6 lg:px-8 py-16">
             <Footer />
         </div>
 
-        <hr class="border border-primary-lighter mx-10" />
-
-        <div class="container mx-auto px-4 text-center">
-            <span class="text-sm font-playfair">@ {{ year }} Linneth. All rights reserved.</span>
+        <div class="border-t border-gray-200">
+            <div class="container mx-auto px-6 lg:px-8 py-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <span class="text-sm text-gray-600 font-light">
+                        © {{ year }} Linneth Gomera. All rights reserved.
+                    </span>
+                    <div class="flex items-center space-x-6 mt-4 md:mt-0">
+                        <span class="text-sm text-gray-600 font-light">Portfolio & Modeling</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </template>
